@@ -1,0 +1,44 @@
+1)https://www.hackerrank.com/challenges/playing-with-characters/problem?isFullScreen=true
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    char ch;
+    char s[100];
+    char sen[100];
+
+    // 1. Read a single character
+    scanf("%c", &ch);
+
+    // 2. Read the next string (stops at the first space or newline)
+    scanf("%s", s);
+
+    /* 3. IMPORTANT: After scanf("%s", s), a newline character (\n) 
+       remains in the buffer. We must consume it so the next 
+       scanf doesn't immediately read it as an empty line.
+    */
+    scanf("\n"); 
+
+    // 4. Read the entire sentence until the next newline
+    scanf("%[^\n]%*c", sen);
+
+    // Output the results in order
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sen); 
+    return 0;
+}
+output:
+Success
+Input (stdin)
+C
+Language
+Welcome To C!!
+Expected Output
+C
+Language
+Welcome To C!!
