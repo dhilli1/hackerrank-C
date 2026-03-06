@@ -1,0 +1,23 @@
+1) https://www.hackerrank.com/challenges/hello-world-c/submissions/code/458841058
+#include <stdio.h>
+
+int main() {
+    char s[100];
+
+
+    fgets(s, sizeof(s), stdin);
+
+
+    printf("Hello, World!\n");
+    printf("%s", s);
+
+    return 0;
+}
+output:
+Compiler Message
+Success
+Input (stdin)
+Welcome to C programming.
+Expected Output
+Hello, World!
+Welcome to C programming.
