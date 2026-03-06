@@ -1,0 +1,37 @@
+1)https://www.hackerrank.com/challenges/playing-with-characters/submissions/code/460817376
+#include <stdio.h>
+
+int main() {
+    char ch;
+    char s[100];
+    char sentence[100];
+
+    // Read a single character
+    scanf("%c", &ch);
+
+    // Read a string (no spaces)
+    scanf("%s", s);
+
+    // Consume leftover newline
+    scanf("\n");
+
+    // Read a full sentence (with spaces)
+    scanf("%[^\n]", sentence);
+
+    // Print outputs
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sentence);
+
+    return 0;
+}
+output:
+Success
+Input (stdin)
+C
+Language
+Welcome To C!!
+Expected Output
+C
+Language
+Welcome To C!!
